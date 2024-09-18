@@ -3,7 +3,7 @@ on: push
 jobs:
   #Build job
   build:
-    run-on: ubuntu-lates
+    runs-on: ubuntu-lates
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
