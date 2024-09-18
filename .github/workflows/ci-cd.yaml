@@ -23,10 +23,10 @@ jobs:
   #Deploy Job
   deploy:
     # Add a dependency to the build job
-    needs: build
+   needs: build
     # Specify runner + deployment step
-  runs-on: ubuntu-latest
-  steps:
+   runs-on: ubuntu-latest
+   steps:
     - name: Download artifact
       uses: actions/download-artifact@v3
       with:
